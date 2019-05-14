@@ -9,7 +9,7 @@ class Projectile < Formula
   depends_on :java => "1.8+"
 
   def install
-    libexec.install "projectile-#{version}.jar"
+    libexec.install "projectile.jar"
     bin.write_jar_script libexec/"projectile.jar", "projectile"
   end
 

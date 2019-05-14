@@ -10,7 +10,7 @@ class Projectile < Formula
 
   def install
     libexec.install "projectile-#{version}.jar"
-    bin.write_jar_script libexec/"projectile-#{version}.jar", "projectile"
+    bin.write_jar_script libexec/"projectile.jar", "projectile"
   end
 
   test do

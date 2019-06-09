@@ -1,8 +1,8 @@
 class Projectile < Formula
   desc "Creates beautiful Scala code from your Postgres database, GraphQL queries, or Thrift definitions"
   homepage "https://kyleu.com/projectile"
-  url "https://github.com/KyleU/projectile/releases/download/v1.10.0/projectile.jar"
-  sha256 "322858e6ac5c7c93d4543d671aa4f9d0bd6b95b6c8f911b00b670c5696c9fd24"
+  url "https://github.com/KyleU/projectile/releases/download/v1.10.4/projectile.jar"
+  sha256 "52a940f21e13ddce6ce89062268fa351d2c7742c299dc99263102125792bd5c7"
 
   bottle :unneeded
 

@@ -5,29 +5,29 @@
 class Admini < Formula
   desc "TODO"
   homepage "https://admini.dev"
-  version "0.0.3"
+  version "0.0.4"
   license "TODO"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.3/admini_0.0.3_macos_x86_64.zip"
-      sha256 "7937cdb3d820af8f0a248ab9a15c19e1f2d484bbd1bcb860d5cdf2682d6cdadc"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_macos_x86_64.zip"
+      sha256 "4dc4aefde6cad5008f7795e3cf02eadc2796d7ae1b5958a7a41a850589cbce57"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.3/admini_0.0.3_macos_arm64.zip"
-      sha256 "d3f0e90547cc8d6c728e083a313419e60e6569336d04b4f768dacb6a34dbc965"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_macos_arm64.zip"
+      sha256 "d87177a59b3ccb2ca8db34e624be11533278d31a8e17bc1df0a6da9120513f1d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.3/admini_0.0.3_linux_x86_64.zip"
-      sha256 "cd28cebf8636f586c1a78098bdf9a5693fb21724390d52072a45f8317a332b39"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_linux_x86_64.zip"
+      sha256 "402cda1246f19cfae64b140a73ed823675a9023444c9d7db269de29ac095bd3d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.3/admini_0.0.3_linux_arm64.zip"
-      sha256 "db2e989109e9c61509a7423b1e3ad48ac4f34cec26175a9e6e3135656e3976c0"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_linux_arm64.zip"
+      sha256 "6dd21e3fd74953745af2b7c9c9ac2c245856c7d30fa727f883b029ab5ca2c6dc"
     end
   end
 

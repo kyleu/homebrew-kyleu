@@ -11,22 +11,22 @@ class Admini < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_macos_x86_64.zip"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_macos_x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "4dc4aefde6cad5008f7795e3cf02eadc2796d7ae1b5958a7a41a850589cbce57"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_macos_arm64.zip"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_macos_arm64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "d87177a59b3ccb2ca8db34e624be11533278d31a8e17bc1df0a6da9120513f1d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_linux_x86_64.zip"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_linux_x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "402cda1246f19cfae64b140a73ed823675a9023444c9d7db269de29ac095bd3d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_linux_arm64.zip"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.4/admini_0.0.4_linux_arm64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "6dd21e3fd74953745af2b7c9c9ac2c245856c7d30fa727f883b029ab5ca2c6dc"
     end
   end

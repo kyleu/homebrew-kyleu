@@ -5,29 +5,29 @@
 class Admini < Formula
   desc "TODO"
   homepage "https://admini.dev"
-  version "0.0.5"
+  version "0.0.7"
   license "TODO"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.5/admini_0.0.5_macos_x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "624727f6f2c3cd1f92a097f0e238aaf993c51750bfb6d5229e0eb5148eab2932"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.7/admini_0.0.7_macos_x86_64.zip"
+      sha256 "a3130a533f6faa3a9743d437e3b37330514972859924e220614134cedd048120"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.5/admini_0.0.5_macos_arm64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "6903d468ffb19afa6b4b92c23d6193d5ae48134fe3914d657079bde73a3ec696"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.7/admini_0.0.7_macos_arm64.zip"
+      sha256 "464fb03f21035d6fadd6a673604bffe5f8407ef914c23cce81ef222cc8166dbd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.5/admini_0.0.5_linux_x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a32d5a55513cf0f3efdcc6c2844e8c1e1adffacf8ae8aa57ff62d30aa885bdeb"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.7/admini_0.0.7_linux_x86_64.zip"
+      sha256 "6bcd134695a76ac6bceb7da61c8ec6032ea149655c0153b6a2dd6dc6050c4287"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.0.5/admini_0.0.5_linux_arm64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "7dcfcbdca10edbcbce851e5d7932747f5dc819377008e79dc90c7d128057fa6d"
+      url "https://github.com/KyleU/admini/releases/download/v0.0.7/admini_0.0.7_linux_arm64.zip"
+      sha256 "e275e1b41eda5a064b4681f6685992ea2ef861592f75c7dcf4d2b3bda61308e8"
     end
   end
 

@@ -12,26 +12,26 @@ class Admini < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/KyleU/admini/releases/download/v0.1.5/admini_0.1.5_macos_x86_64.zip"
-      sha256 "1275523118845f84c73e45285abdf7ae2405b9fbf3c161280f5dba688b1442c7"
+      sha256 "1964a33e424695141c94c14d2eb70bbfe12845b397366887dc60ad61d15ec115"
     end
     if Hardware::CPU.arm?
       url "https://github.com/KyleU/admini/releases/download/v0.1.5/admini_0.1.5_macos_arm64.zip"
-      sha256 "857fbcee4375d146958b168a23cf8aa97e6b76ef9ab350394610c5346da5d9c9"
+      sha256 "a1115a3457838e6ce684e8c25515edc7cd30e8434f2a441b18bf4efaa75e2308"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/KyleU/admini/releases/download/v0.1.5/admini_0.1.5_linux_x86_64.zip"
-      sha256 "30d768b91575d53ed81064e0a5c1644a1572e695cc9aa0c98c3bcda4f24dd0cc"
+      sha256 "cea3e4628ed78f8dd6f399ff58d5d4e520f10bd3a6672c3d001379d56542d7f2"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/KyleU/admini/releases/download/v0.1.5/admini_0.1.5_linux_armv6.zip"
-      sha256 "1079499654f78db59f2cea5cdcb806bed56f2cceb9a6d4a26eb93716000214da"
+      sha256 "5c39cd002ad0848be4ce327abbb59f10ebaf80e750d7ab361f09cd81e4d31138"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/KyleU/admini/releases/download/v0.1.5/admini_0.1.5_linux_arm64.zip"
-      sha256 "31de2e45c814f929cd2fab7223b5834a226506d0ae89bf9574d606fb4ec61d8d"
+      sha256 "71bc98bb5bf93a75219c7d11c268576b1b5add5517fd978475aca37b9de364a9"
     end
   end
 

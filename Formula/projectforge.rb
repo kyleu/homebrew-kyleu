@@ -5,33 +5,33 @@
 class Projectforge < Formula
   desc "Helps you build and maintain lightning-fast Golang projects"
   homepage "https://projectforge.dev"
-  version "0.0.4"
+  version "0.0.5"
   license "Proprietary"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.4/projectforge_0.0.4_macos_x86_64.zip"
-      sha256 "abc75d49f19e71c24e552e3f0d81934aa9e6aea8c14aae5278e9b0ab5f1d0b84"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.5/projectforge_0.0.5_macos_x86_64.zip"
+      sha256 "cdc0d3fcf5d8f96ad7c18ff469f94a42b5af4edc619b0cb0e4e4da1b4d222c42"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.4/projectforge_0.0.4_macos_arm64.zip"
-      sha256 "79a01007a9b24daced3d199d31df8be0b2f2e5ca520bda318d2ed83ecdb7f387"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.5/projectforge_0.0.5_macos_arm64.zip"
+      sha256 "ab271c7d05bf8066d0bb385495b93ee4ef175cee82f15df53967849868a879f9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.4/projectforge_0.0.4_linux_x86_64.zip"
-      sha256 "84660f0fe684b706e18320156b400e03036fdcc2c95d2e36d4647a2c0ce4984a"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.5/projectforge_0.0.5_linux_x86_64.zip"
+      sha256 "a287b5a6e5f7e4fc10ad6584f85df8c11a1fae8d60ff20fb3bb41b6afe605602"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.4/projectforge_0.0.4_linux_armv6.zip"
-      sha256 "805dc4250457defcfdb2e8fb73ec4cd17ba53dea6688626091e6bb2b84a833ec"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.5/projectforge_0.0.5_linux_armv6.zip"
+      sha256 "3e78082c7d9923fe8aa4c3ff178efe82fd024eb228c48a9c6c25164e85c5f8b1"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.4/projectforge_0.0.4_linux_arm64.zip"
-      sha256 "36ad7ef2eabaf154e6dab4aa73b82f64049cd01ba622da082e2fa8703c51b312"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.5/projectforge_0.0.5_linux_arm64.zip"
+      sha256 "d94550a855b8fde3a4406f43d0a187f4eef5f90e289bc3808be955d4b5381163"
     end
   end
 

@@ -12,26 +12,26 @@ class Projectforge < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/KyleU/projectforge/releases/download/v0.0.9/projectforge_0.0.9_macos_x86_64.zip"
-      sha256 "7e7dd9443da947e73d7090183a8aa561451cfd474902fc7610a8326c75264db4"
+      sha256 "5784f9534c7c12f91a0c06c127e94c6181903bfb228c5b69adda4168450d5916"
     end
     if Hardware::CPU.arm?
       url "https://github.com/KyleU/projectforge/releases/download/v0.0.9/projectforge_0.0.9_macos_arm64.zip"
-      sha256 "6291bd4c9a2aa034deafb619c4abfa3a63e9bc3a3e78fc775152180ab52014dd"
+      sha256 "bc9af20d6eae05887727019434b1c4af9d02f91566a40dbc582b608b94f8aadd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/KyleU/projectforge/releases/download/v0.0.9/projectforge_0.0.9_linux_x86_64.zip"
-      sha256 "8f0af0b547a695008d845e8b275649be0a27a13c1ba9dcc494bfb2d8687de0b2"
+      sha256 "0c58694c042de651918e57bfc954c3425294d583aab74d357e3dfe378a3141cb"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/KyleU/projectforge/releases/download/v0.0.9/projectforge_0.0.9_linux_armv6.zip"
-      sha256 "f65be9c475a25f2d582ba6029e6b3f947c67738758189f1528b5a1f0fbb93c59"
+      sha256 "ac8a5dfacf773bf6a1a73b9b5d7ec16a62edf468ff74b80d84345a71570d8fec"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/KyleU/projectforge/releases/download/v0.0.9/projectforge_0.0.9_linux_arm64.zip"
-      sha256 "ecd6dce0cc085bcff5ff55aceae695da1aa6dc7c2b8da292769bb7dc3f8145b0"
+      sha256 "e7770c24286111fb5b439ee405e4aa991e0e74717894ee52524a047ecaf21d41"
     end
   end
 

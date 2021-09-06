@@ -5,33 +5,33 @@
 class Admini < Formula
   desc "Explore and manage your data as fast and easily as possible. Supports SQLite and PostgreSQL data sources, and provides a lightning-fast web interface"
   homepage "https://admini.dev"
-  version "0.1.8"
+  version "0.1.9"
   license "Proprietary"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.8/admini_0.1.8_macos_x86_64.zip"
-      sha256 "b5d27828a3795ddf1c2cdadfe3234938c2baa182f80cb3d78f42b922dfa247b0"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.9/admini_0.1.9_macos_x86_64.zip"
+      sha256 "9189bc305122f1a14eefea4c550671be1384659df93dee787853a9aa156d4bf0"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.8/admini_0.1.8_macos_arm64.zip"
-      sha256 "3d33b58f50523988863b3619eb55337b4bd7cf2c041de16d7d688397554ed15f"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.9/admini_0.1.9_macos_arm64.zip"
+      sha256 "9bb74cc186139937418e0ea00e6a55414d32d950c773b6754a80df3a30133d2c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.8/admini_0.1.8_linux_x86_64.zip"
-      sha256 "09567a56917c2935560413e8cb994d31b9d719185bc54c5123a5360bdfd7d49d"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.9/admini_0.1.9_linux_x86_64.zip"
+      sha256 "5ea65396aac406a67d2a410e15add944c036e7b779e7fc403c0ed6278a18e058"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.8/admini_0.1.8_linux_armv6.zip"
-      sha256 "14cd8280f575f0de5c4d3e3b65872fd7cd5993ebb9c61ff697f212805ebed353"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.9/admini_0.1.9_linux_armv6.zip"
+      sha256 "645a4c5bfdecc2d40152c1a124966143e5033a5c8246f73a8a33b500f8bfbd3d"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.8/admini_0.1.8_linux_arm64.zip"
-      sha256 "3fc8bdf87d3e9083d443713d8cf97ec8d80c4db2bdd309734886cd8bfa323cf6"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.9/admini_0.1.9_linux_arm64.zip"
+      sha256 "af30546d561458e215f1bbc2d64bed1cdc5b683fceaea538c3d3e0e609e6cdea"
     end
   end
 

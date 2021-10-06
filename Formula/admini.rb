@@ -5,33 +5,33 @@
 class Admini < Formula
   desc "Explore and manage your data as fast and easily as possible. Supports SQLite and PostgreSQL data sources, and provides a lightning-fast web interface"
   homepage "https://admini.dev"
-  version "0.1.14"
+  version "0.1.15"
   license "Proprietary"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.14/admini_0.1.14_macos_x86_64.zip"
-      sha256 "ab33bd51716503eeac3cc63db6c87f65a4e9842eeb2ff0d8d4bf388bf04d826f"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.15/admini_0.1.15_macos_x86_64.zip"
+      sha256 "dba687b54c9e7f4513934d0b0e851def4e234e0d8b7e91464a62a5808807b9b5"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.14/admini_0.1.14_macos_arm64.zip"
-      sha256 "6d1e77eb9cbbfcc9cc8bb7c2d1db5d0668f3c2f7679fffdb3609ec8762d390f4"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.15/admini_0.1.15_macos_arm64.zip"
+      sha256 "ef008114888fe8e9dae6e1f3629cae50a5c5b2551125f5f0b9c896ed5b2816f2"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.14/admini_0.1.14_linux_x86_64.zip"
-      sha256 "b0baaf03e30fb45686f6a8810391e5cbc2e7d772c50f62674c058ac56be44def"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.15/admini_0.1.15_linux_x86_64.zip"
+      sha256 "8b2d4048d5694bef4be86c579a30baa504e4c2e0e51e280324f4943ca396a848"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.14/admini_0.1.14_linux_armv6.zip"
-      sha256 "8b727a107759df67aa2035afb414a4e03dbc70b26edae62c473877b867bdfbf4"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.15/admini_0.1.15_linux_armv6.zip"
+      sha256 "d0b89477f52441a16d9f4327c7af3889c13dc0be09a713ae831815043e8ad351"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/admini/releases/download/v0.1.14/admini_0.1.14_linux_arm64.zip"
-      sha256 "bf8a0aa2d9bf368830c423e2de9383bdd4f5c64ee2f5b93ce5766b32386a743c"
+      url "https://github.com/KyleU/admini/releases/download/v0.1.15/admini_0.1.15_linux_arm64.zip"
+      sha256 "92b18b5dddba5209041fdadac902a2a7e2772a7b4e5a93453932605504e43b41"
     end
   end
 

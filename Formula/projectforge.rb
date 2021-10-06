@@ -5,33 +5,33 @@
 class Projectforge < Formula
   desc "Helps you build and maintain lightning-fast Golang projects"
   homepage "https://projectforge.dev"
-  version "0.0.19"
+  version "0.0.20"
   license "Proprietary"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.19/projectforge_0.0.19_macos_x86_64.zip"
-      sha256 "4babe0b3fc0a7c08a7e9a4aeb2fba77f0772d35d86589b29d245fe87aa446f45"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.20/projectforge_0.0.20_macos_x86_64.zip"
+      sha256 "2ad80f2ee284a7942e4b3dcf212d8a09da3555e4d350bc8eea35227fc17a7eb7"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.19/projectforge_0.0.19_macos_arm64.zip"
-      sha256 "c4b6635cb3199d34d5c4a49d1009e7a1b20d78a875b310b5e0f24a28f7341532"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.20/projectforge_0.0.20_macos_arm64.zip"
+      sha256 "093590b1bcb472cc3538c6bb3578d646560528e41675434b9498a3b22bd749c0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.19/projectforge_0.0.19_linux_x86_64.zip"
-      sha256 "b51748749a50368074da3c9dea4361a61bed75d361828dc523922ea5941d83ac"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.20/projectforge_0.0.20_linux_x86_64.zip"
+      sha256 "ecef62e1ac869cf50483df01309fc6e4ad49e0ce322ae7a78b7604affcff6b95"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.19/projectforge_0.0.19_linux_armv6.zip"
-      sha256 "9214ff910653b9cfba1f057dc824731057110e7d83e48ad941b709e5a7701301"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.20/projectforge_0.0.20_linux_armv6.zip"
+      sha256 "ce6a9261d5d75915c1a307dad3ccd72b4b1c5f0baff6244e7511a9e0b6c79acc"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.0.19/projectforge_0.0.19_linux_arm64.zip"
-      sha256 "2dba49cd8261c396e2098e1bb8a9fe1cd068bd40ecf2ecdc8c760472a13d06d4"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.0.20/projectforge_0.0.20_linux_arm64.zip"
+      sha256 "39d091793ef125e5a598fde78694d92404410f1185e6beaf22437c234faf801d"
     end
   end
 

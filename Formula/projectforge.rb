@@ -5,33 +5,33 @@
 class Projectforge < Formula
   desc "Project Forge helps you build and maintain feature-rich applications written in the Go programming language."
   homepage "https://projectforge.dev"
-  version "0.1.2"
+  version "0.1.3"
   license "Proprietary"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.1.2/projectforge_0.1.2_macos_x86_64.zip"
-      sha256 "a9eecfa2f386008de85789f95025e7c251a4510245d1f1da9869539711c1c0b8"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.1.3/projectforge_0.1.3_macos_x86_64.zip"
+      sha256 "c78421f062ef5d2da99db2a3ab8a7431fa16c2377531e8ef9786657219c43551"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.1.2/projectforge_0.1.2_macos_arm64.zip"
-      sha256 "2dced30cb022b7602c35326b7eefa3db246186968a1b6acab3940b5b73b3dbdd"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.1.3/projectforge_0.1.3_macos_arm64.zip"
+      sha256 "5ebd1e0d9362268f4004346ea051b8e264e377c2d0df717f507535afbfaf359b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.1.2/projectforge_0.1.2_linux_x86_64.zip"
-      sha256 "3b8196e7bb494b137d11f5e08c78fdf6ad1046e09814903d95e582af2c9e2e63"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.1.3/projectforge_0.1.3_linux_x86_64.zip"
+      sha256 "aabed466b296b7784fc38376b78f00850fce4f652e1b0054f7e84e44da17ffae"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.1.2/projectforge_0.1.2_linux_armv6.zip"
-      sha256 "b950ff16c25f6ebee9641d0c5bf6f7d9c6310d62eb55cb46a48646950d740f52"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.1.3/projectforge_0.1.3_linux_armv6.zip"
+      sha256 "41ff2d982928759ec81158abbcd54cdfe84d803f07bfad347f33aeca90d58205"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KyleU/projectforge/releases/download/v0.1.2/projectforge_0.1.2_linux_arm64.zip"
-      sha256 "1ce651088c143e184ddaa0c72f9d8d25954098c857faa3a93666751aa8d8aa87"
+      url "https://github.com/KyleU/projectforge/releases/download/v0.1.3/projectforge_0.1.3_linux_arm64.zip"
+      sha256 "9cc800ee46a84312825fcecc90fa28d0f69d700afa1d6c9dd545e089a5bc16a5"
     end
   end
 

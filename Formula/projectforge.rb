@@ -5,33 +5,33 @@
 class Projectforge < Formula
   desc "Project Forge helps you build and maintain feature-rich applications written in the Go programming language."
   homepage "https://projectforge.dev"
-  version "0.1.4"
+  version "0.1.5"
   license "Proprietary"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://update.projectforge.dev/release/v0.1.4/projectforge_0.1.4_macos_x86_64.zip"
-      sha256 "6f815beaea905475478b53a5a7b0b75ad2831bc08fc77a92388b5def05fff5d9"
+      url "https://update.projectforge.dev/release/v0.1.5/projectforge_0.1.5_macos_x86_64.zip"
+      sha256 "027207679f0b1c112b7122791a230e3b63b34b6f75379662cdf4a7228319dce7"
     end
     if Hardware::CPU.arm?
-      url "https://update.projectforge.dev/release/v0.1.4/projectforge_0.1.4_macos_arm64.zip"
-      sha256 "c4f4359ba28563edaeaa64d0fe3596cde6e235784960015a54a70bc41c983d45"
+      url "https://update.projectforge.dev/release/v0.1.5/projectforge_0.1.5_macos_arm64.zip"
+      sha256 "5a48de0fb6e4527e575c65f0bac9d455ae036a72d8e25d716b11b72be5ed55c2"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://update.projectforge.dev/release/v0.1.4/projectforge_0.1.4_linux_x86_64.zip"
-      sha256 "de46ca022a7d84132bde01cabe36614a50788502181637e15857feea40e99565"
+      url "https://update.projectforge.dev/release/v0.1.5/projectforge_0.1.5_linux_x86_64.zip"
+      sha256 "ea2fab9af5c52f0377de269166339d9011955ea58a1bad093732ec3e39952e63"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://update.projectforge.dev/release/v0.1.4/projectforge_0.1.4_linux_armv6.zip"
-      sha256 "f6e05b5a597f5a703adada79228e2d082b22b487735bb0e8013cca1434ab6f1e"
+      url "https://update.projectforge.dev/release/v0.1.5/projectforge_0.1.5_linux_armv6.zip"
+      sha256 "05a642709b4d0b9f43fdc82c8c2071f78a6f7fe87af339fc34b39e379a5c1885"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://update.projectforge.dev/release/v0.1.4/projectforge_0.1.4_linux_arm64.zip"
-      sha256 "907d2a2ed09008fa42ac6464957268b6f01e984a8f87dd5c4a61fbc55c3ba547"
+      url "https://update.projectforge.dev/release/v0.1.5/projectforge_0.1.5_linux_arm64.zip"
+      sha256 "d8af345374834d8a7aecbf73f7f273ef813ff299a3d40a85135f40d36c3c6f80"
     end
   end
 

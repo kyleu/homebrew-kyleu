@@ -5,54 +5,54 @@
 class Projectforge < Formula
   desc "Project Forge helps you build and maintain feature-rich applications written in the Go programming language."
   homepage "https://projectforge.dev"
-  version "0.1.15"
+  version "0.1.16"
   license "Proprietary"
 
   on_macos do
-    url "https://update.projectforge.dev/release/v0.1.15/projectforge_0.1.15_macos_all.zip"
-    sha256 "dd08822be930e5e608444d36999720bf384ed984be52f55d719d0c65806c4976"
-
-    def install
-      bin.install "projectforge"
-    end
     if Hardware::CPU.arm?
-      url "https://update.projectforge.dev/release/v0.1.15/projectforge_0.1.15_macos_arm64.zip"
-      sha256 "789ea241c54b9d7477ce0ffa50e4bd1805cf42139a0fa1b813ba59ad0d3bcf7f"
+      url "https://update.projectforge.dev/release/v0.1.16/projectforge_0.1.16_macos_arm64.zip"
+      sha256 "3ef2f01da2f51195fe3f289527218365a665bf9f0c8c3c757f3f8e67c87fb607"
 
       def install
         bin.install "projectforge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://update.projectforge.dev/release/v0.1.15/projectforge_0.1.15_macos_x86_64.zip"
-      sha256 "df63a1b847ddac651406761dc73b1cfdf2ec898b0d22995e774c4837f813d7e4"
+      url "https://update.projectforge.dev/release/v0.1.16/projectforge_0.1.16_macos_x86_64.zip"
+      sha256 "31cc045c9379ca7f0c13656668773021c791097c362d272516e5ef7e6124473f"
 
       def install
         bin.install "projectforge"
       end
     end
+    url "https://update.projectforge.dev/release/v0.1.16/projectforge_0.1.16_macos_all.zip"
+    sha256 "f6e53410734512ebfbaeb40e7a26855e05c19c3127ad76063febb1dcc30fdfcb"
+
+    def install
+      bin.install "projectforge"
+    end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://update.projectforge.dev/release/v0.1.15/projectforge_0.1.15_linux_arm64.zip"
-      sha256 "bbbfe0ea668f8e28d7d16c8cf5d77aed7de40a8beebf029fe3d13f3cd408b13a"
+      url "https://update.projectforge.dev/release/v0.1.16/projectforge_0.1.16_linux_arm64.zip"
+      sha256 "5640c167528f2712584d903deb6ae35b16bc74681606747ceae756d3f5f45698"
+
+      def install
+        bin.install "projectforge"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://update.projectforge.dev/release/v0.1.16/projectforge_0.1.16_linux_x86_64.zip"
+      sha256 "1b699b02b09ddc9f99d2b81f2f5e25ef84c7a54e078d1c0e9442a01d849b7ce2"
 
       def install
         bin.install "projectforge"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://update.projectforge.dev/release/v0.1.15/projectforge_0.1.15_linux_armv6.zip"
-      sha256 "991fde7137c8325802a625383a1b6afd649d3ec6f04436e2340027f9e1222880"
-
-      def install
-        bin.install "projectforge"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://update.projectforge.dev/release/v0.1.15/projectforge_0.1.15_linux_x86_64.zip"
-      sha256 "cb9f6316a7c7fd81b3ade1295da1f40e16090134ee6c57d2d9857a52c72f75a0"
+      url "https://update.projectforge.dev/release/v0.1.16/projectforge_0.1.16_linux_armv6.zip"
+      sha256 "53b5dc223cc63530162176284cedb2236f207180738c9d8ad5dc60965c34c9f2"
 
       def install
         bin.install "projectforge"

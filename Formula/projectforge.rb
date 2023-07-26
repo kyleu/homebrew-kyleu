@@ -9,17 +9,17 @@ class Projectforge < Formula
   license "Proprietary"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_darwin_arm64.zip"
-      sha256 "b46c28de133f65acc514763e0c8216ef91a5895a8e11fd90020c14936433305d"
+    if Hardware::CPU.intel?
+      url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_darwin_amd64.zip"
+      sha256 "02a79bab4d3f532dfc393da91b8e965e65c2bc8966292e131bf95f89fdec11b5"
 
       def install
         bin.install "projectforge"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_darwin_amd64.zip"
-      sha256 "82bd041e35d1257cf3d2f31434980f9bd250f6e05b95e94256424c2c75440bdf"
+    if Hardware::CPU.arm?
+      url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_darwin_arm64.zip"
+      sha256 "e8ca208c5de159196badabd7114a26cfbd40c6ffb16b4d1ac7afa7ca24ff66be"
 
       def install
         bin.install "projectforge"
@@ -30,7 +30,7 @@ class Projectforge < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_linux_armv6.zip"
-      sha256 "98bdff3db0cf623d1b12049bb3a2abe1d593e8bb98d81ca621b29b387d539f6f"
+      sha256 "1bffc3c211795d51a682ca2046bb090b1ca285028ce39d4e4db1feedf0584d20"
 
       def install
         bin.install "projectforge"
@@ -38,7 +38,7 @@ class Projectforge < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_linux_arm64.zip"
-      sha256 "2c0d196d492fc808c6d53d620bc45dfc61b840a60bb7364cf54bfafbc14223f3"
+      sha256 "218cadfe864c1fa60c76cfa80ef939bbdcc37d992d08a5872fe209e62a21374d"
 
       def install
         bin.install "projectforge"
@@ -46,7 +46,7 @@ class Projectforge < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kyleu/projectforge/releases/download/v0.11.5/projectforge_0.11.5_linux_amd64.zip"
-      sha256 "4b0eef838b24d2dbdb2a54c2304d33bbbcbc7010cb6a21cfefdf2d117e50f7f9"
+      sha256 "ed09b86234f9bd384d7a32ab35020cade614bfbbfead6203ee02c585e2314fc0"
 
       def install
         bin.install "projectforge"

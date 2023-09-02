@@ -5,21 +5,21 @@
 class Admini < Formula
   desc "Explore and manage your data as fast and easily as possible. Supports PostgreSQL, MySQL, and SQLite data sources, and provides a lightning-fast web interface"
   homepage "https://admini.dev"
-  version "0.2.31"
+  version "0.2.32"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/admini/releases/download/v0.2.31/admini_0.2.31_darwin_amd64.zip"
-      sha256 "92b2b73a4b9eb4a85ac1885ab602f6e296bfba041e70724895bbd783231a7d31"
+      url "https://github.com/kyleu/admini/releases/download/v0.2.32/admini_0.2.32_darwin_amd64.zip"
+      sha256 "eabca5303b338abd2a2b89cb6d6570c145e33b5da774be9aefdce17c0a64f931"
 
       def install
         bin.install "admini"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyleu/admini/releases/download/v0.2.31/admini_0.2.31_darwin_arm64.zip"
-      sha256 "9de01f730d6631afa1ac96c9707f473085bdf2143d47a37efccf8ba2bab998bc"
+      url "https://github.com/kyleu/admini/releases/download/v0.2.32/admini_0.2.32_darwin_arm64.zip"
+      sha256 "be8d80b024d81f410e97e38732334abf9a8c6ec50fdf4f57ac3ad1df2f03ccad"
 
       def install
         bin.install "admini"
@@ -29,24 +29,24 @@ class Admini < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/admini/releases/download/v0.2.31/admini_0.2.31_linux_amd64.zip"
-      sha256 "48f6015c24827f96213f6f6f9fd6703a4d52ba3e4916aeccb89885db13352bf9"
+      url "https://github.com/kyleu/admini/releases/download/v0.2.32/admini_0.2.32_linux_amd64.zip"
+      sha256 "ab28be543814389e44594119de321431771679cdee7c657cb72886aecc7771b4"
 
       def install
         bin.install "admini"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/kyleu/admini/releases/download/v0.2.31/admini_0.2.31_linux_armv6.zip"
-      sha256 "1981d559298b92c21316e7ffb28e9510353622ee4a2a4d426388546d8630983c"
+      url "https://github.com/kyleu/admini/releases/download/v0.2.32/admini_0.2.32_linux_armv6.zip"
+      sha256 "6794b701764b9646118287e069f6372aaeb262841998a35720f1288efcd62c86"
 
       def install
         bin.install "admini"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyleu/admini/releases/download/v0.2.31/admini_0.2.31_linux_arm64.zip"
-      sha256 "b7f195a6c27131099a43e9949a380e76d7dfd8a018ca2d0d7b597638c2ed5de2"
+      url "https://github.com/kyleu/admini/releases/download/v0.2.32/admini_0.2.32_linux_arm64.zip"
+      sha256 "dcb0c000fb51f1a682a24764546abcca3aec455dd1e7961ec416babb99b41cde"
 
       def install
         bin.install "admini"

@@ -5,21 +5,21 @@
 class Loadtoad < Formula
   desc "Load Toad helps you test your web application using HTTP Archive (.har) files"
   homepage "https://github.com/kyleu/loadtoad"
-  version "0.0.15"
+  version "0.0.16"
   license "CC0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.15/loadtoad_0.0.15_darwin_amd64.zip"
-      sha256 "af646df9f5c8f381358d58232c997a6498ec8f2fb630b6fd3d055fba210149e5"
+    if Hardware::CPU.arm?
+      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.16/loadtoad_0.0.16_darwin_arm64.zip"
+      sha256 "74944216a3ad5ce485a260f753d0698e9633a46d4961012168485460c5e91e9a"
 
       def install
         bin.install "loadtoad"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.15/loadtoad_0.0.15_darwin_arm64.zip"
-      sha256 "295224b8eb9c649b0f5eeeacc5deedd08d268c7b541a38562481138ace1a6382"
+    if Hardware::CPU.intel?
+      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.16/loadtoad_0.0.16_darwin_amd64.zip"
+      sha256 "52a42837aa1d9ea6c135ccc13e5130f81e6e7f975a0ab7fa3554cc027f2c6594"
 
       def install
         bin.install "loadtoad"
@@ -29,24 +29,24 @@ class Loadtoad < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.15/loadtoad_0.0.15_linux_armv6.zip"
-      sha256 "72f2cd0068d84f2f412bd49ddcadb4031df37050e2ba2f2fca35cca564ac4181"
+      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.16/loadtoad_0.0.16_linux_armv6.zip"
+      sha256 "869545bff7761ef042431ca889f75a34376bcf80c78bf9da83e35e6a656e6190"
 
       def install
         bin.install "loadtoad"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.15/loadtoad_0.0.15_linux_arm64.zip"
-      sha256 "ebd8df014fe4985259928927c6880d37c915cf2f41297f8d11a1e9dac173ca5a"
+      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.16/loadtoad_0.0.16_linux_arm64.zip"
+      sha256 "327edf451e39778676eee53dc7621b842a2b61b020d1a002fbfe997e3dc58b98"
 
       def install
         bin.install "loadtoad"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.15/loadtoad_0.0.15_linux_amd64.zip"
-      sha256 "e4df4f27df1fdacf08e7f78f3569585434344f005975ade94fdd75dc1c617fca"
+      url "https://github.com/kyleu/loadtoad/releases/download/v0.0.16/loadtoad_0.0.16_linux_amd64.zip"
+      sha256 "8f0335a988faefb91bacaa7fa04e97ad07cd7103a1ef689513d15d6f6f1907c8"
 
       def install
         bin.install "loadtoad"

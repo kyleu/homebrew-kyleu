@@ -5,21 +5,21 @@
 class Rituals < Formula
   desc "This app, rituals.dev, allows you to collaborate with your team to manage your work. It provides teams, sprints, estimate sessions, standup meetings, and retrospectives."
   homepage "https://rituals.dev"
-  version "2.1.20"
+  version "2.1.21"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyleu/rituals/releases/download/v2.1.20/rituals_2.1.20_darwin_amd64.zip"
-      sha256 "bc803ca670828ffd5f68c5a846155a4814578c88fe7d452f02b33f8c19fec7ff"
+      url "https://github.com/kyleu/rituals/releases/download/v2.1.21/rituals_2.1.21_darwin_amd64.zip"
+      sha256 "794185c40e83036ec536e7dc9266df516deaf51142c13e26d195f7528fcc4f8f"
 
       def install
         bin.install "rituals"
       end
     end
     on_arm do
-      url "https://github.com/kyleu/rituals/releases/download/v2.1.20/rituals_2.1.20_darwin_arm64.zip"
-      sha256 "6a214b65efbd930a0daf9a2b2955300b50841e2128c6809217d988098677cafa"
+      url "https://github.com/kyleu/rituals/releases/download/v2.1.21/rituals_2.1.21_darwin_arm64.zip"
+      sha256 "3bb743f50c80d17938d9709e42cc404c74721597e4740be07b0e788c78a98e38"
 
       def install
         bin.install "rituals"
@@ -30,8 +30,8 @@ class Rituals < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/rituals/releases/download/v2.1.20/rituals_2.1.20_linux_amd64.zip"
-        sha256 "1da87a88d0be7585735458da7d3adb70eed7ccce1e4a2704be197ac809234777"
+        url "https://github.com/kyleu/rituals/releases/download/v2.1.21/rituals_2.1.21_linux_amd64.zip"
+        sha256 "55b3cabb06531b44c197a38f57f67a88fc1e436d9d73e096473bee74ddbbcefe"
 
         def install
           bin.install "rituals"
@@ -40,8 +40,8 @@ class Rituals < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/rituals/releases/download/v2.1.20/rituals_2.1.20_linux_armv6.zip"
-        sha256 "340e00ee3d34ad2448aac041171a89a905cede3647f15c99e7445c7e19d0cd53"
+        url "https://github.com/kyleu/rituals/releases/download/v2.1.21/rituals_2.1.21_linux_armv6.zip"
+        sha256 "fdc1a46c6053c1c17e57e5f9118a20569e8ad64615d93bb6d71b844353e8c910"
 
         def install
           bin.install "rituals"
@@ -50,8 +50,8 @@ class Rituals < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/rituals/releases/download/v2.1.20/rituals_2.1.20_linux_arm64.zip"
-        sha256 "e301ab2260ffb06ebbbd00985b89992499f3c872b62bc30496967c340d8d6310"
+        url "https://github.com/kyleu/rituals/releases/download/v2.1.21/rituals_2.1.21_linux_arm64.zip"
+        sha256 "6bbbf099938f755d07051e5cf0832092e84dc908f9984fa499271a9367c32ab4"
 
         def install
           bin.install "rituals"

@@ -5,21 +5,21 @@
 class Idled < Formula
   desc "Very much a work-in-progress, this will eventually be an incremental/idle game"
   homepage "https://github.com/kyleu/idled"
-  version "0.0.1"
+  version "0.0.2"
   license "CC0"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyleu/idled/releases/download/v0.0.1/idled_0.0.1_darwin_amd64.zip"
-      sha256 "06a8c94626aff678a2d0136a485a83a1544145b91ff69fec8ec82fe194bb51c5"
+      url "https://github.com/kyleu/idled/releases/download/v0.0.2/idled_0.0.2_darwin_amd64.zip"
+      sha256 "a2a2f96a056bd25ca71cac6d3184fc67e4d8b002403442594eba93d9097dd20b"
 
       def install
         bin.install "idled"
       end
     end
     on_arm do
-      url "https://github.com/kyleu/idled/releases/download/v0.0.1/idled_0.0.1_darwin_arm64.zip"
-      sha256 "f38654c73a8c3a11adcc3191263341e29840a0ba103568f0bbea1b2369c4662e"
+      url "https://github.com/kyleu/idled/releases/download/v0.0.2/idled_0.0.2_darwin_arm64.zip"
+      sha256 "aa9dac37c792f75ca95422ffbb44df609d3bf260437a6a613378870899f857c0"
 
       def install
         bin.install "idled"
@@ -30,8 +30,8 @@ class Idled < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/idled/releases/download/v0.0.1/idled_0.0.1_linux_amd64.zip"
-        sha256 "bd74106eacce4eeddde718d1dc4557db2594c853a968969de9ec4923d5974a7b"
+        url "https://github.com/kyleu/idled/releases/download/v0.0.2/idled_0.0.2_linux_amd64.zip"
+        sha256 "735a0b95785899ec7de40dbd73bbb3fe5e777321a4567620dcf9df0da785dd7d"
 
         def install
           bin.install "idled"
@@ -40,8 +40,8 @@ class Idled < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/idled/releases/download/v0.0.1/idled_0.0.1_linux_armv6.zip"
-        sha256 "45795ec99c23c695c22ef0696e986fad0815852c8d0491520b6c920dacc75a71"
+        url "https://github.com/kyleu/idled/releases/download/v0.0.2/idled_0.0.2_linux_armv6.zip"
+        sha256 "ff62a9bda3efa21911a93f50d8948263404ec08cf5a805d68d1631d5e2011ade"
 
         def install
           bin.install "idled"
@@ -50,8 +50,8 @@ class Idled < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/idled/releases/download/v0.0.1/idled_0.0.1_linux_arm64.zip"
-        sha256 "d48f1c02d4474fef5c0ba627b7318684a2cdfa5b45bdf8020ef9d2ca742966dd"
+        url "https://github.com/kyleu/idled/releases/download/v0.0.2/idled_0.0.2_linux_arm64.zip"
+        sha256 "9c0a58a3625995eb10841be13e99ca6aec5fc5182fe12b796151fdd1c001fa27"
 
         def install
           bin.install "idled"

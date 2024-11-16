@@ -5,21 +5,21 @@
 class Lifelog < Formula
   desc "Track the time you spend on your devices"
   homepage "https://lifelog.dev"
-  version "0.0.26"
+  version "0.0.27"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyleu/lifelog/releases/download/v0.0.26/lifelog_0.0.26_darwin_amd64.zip"
-      sha256 "50e438966fdda13a731ac16d1f0c996cf52d6a8bceed702fbc7249edf307a506"
+      url "https://github.com/kyleu/lifelog/releases/download/v0.0.27/lifelog_0.0.27_darwin_amd64.zip"
+      sha256 "ca64f2de09a34cb79cefe2369392ff217cae979767d85ef7a5ec339cdc6e5fc4"
 
       def install
         bin.install "lifelog"
       end
     end
     on_arm do
-      url "https://github.com/kyleu/lifelog/releases/download/v0.0.26/lifelog_0.0.26_darwin_arm64.zip"
-      sha256 "cb32a202413020f0dab61c324ee28b44904c74a076e6cd57db8e1ac2ed0276f8"
+      url "https://github.com/kyleu/lifelog/releases/download/v0.0.27/lifelog_0.0.27_darwin_arm64.zip"
+      sha256 "7c850a76aafd8e49face2380215ec5b335abceb1353c71fba1406add6ddf522c"
 
       def install
         bin.install "lifelog"
@@ -30,8 +30,8 @@ class Lifelog < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/lifelog/releases/download/v0.0.26/lifelog_0.0.26_linux_amd64.zip"
-        sha256 "95e29a53f380085e3f483c506d8285608b0d20436b0e7892e3bbc06b104ab30f"
+        url "https://github.com/kyleu/lifelog/releases/download/v0.0.27/lifelog_0.0.27_linux_amd64.zip"
+        sha256 "f1a5ae56935f244a3f813495a531d7b919b56e71f889a077a2925101c32a3794"
 
         def install
           bin.install "lifelog"
@@ -40,8 +40,8 @@ class Lifelog < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/lifelog/releases/download/v0.0.26/lifelog_0.0.26_linux_armv6.zip"
-        sha256 "8025aee526308369db92c4f8a15427efe10f0723141679de93e5569f302066a6"
+        url "https://github.com/kyleu/lifelog/releases/download/v0.0.27/lifelog_0.0.27_linux_armv6.zip"
+        sha256 "213f0744b71af0d32402ac03e9eed6cd7657da5d682793b35f9a2086a9c06f20"
 
         def install
           bin.install "lifelog"
@@ -50,8 +50,8 @@ class Lifelog < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/lifelog/releases/download/v0.0.26/lifelog_0.0.26_linux_arm64.zip"
-        sha256 "cc2da4e158cc1ca6d9e7c936a700857d8b13d0e89861a11e167757c456bf7ea9"
+        url "https://github.com/kyleu/lifelog/releases/download/v0.0.27/lifelog_0.0.27_linux_arm64.zip"
+        sha256 "3d7c381064cec06da1db7b9e45588c315e335a29e540395f06abad0534935c63"
 
         def install
           bin.install "lifelog"

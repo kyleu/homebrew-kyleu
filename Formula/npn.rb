@@ -5,21 +5,21 @@
 class Npn < Formula
   desc "It's basically Postman, but much smaller (8MB download) and faster. You can run npn as an HTTP server, or use a native desktop or mobile app."
   homepage "https://github.com/kyleu/npn"
-  version "0.1.38"
+  version "0.1.39"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kyleu/npn/releases/download/v0.1.38/npn_0.1.38_darwin_amd64.zip"
-      sha256 "8c2501797f5aecd4e1ad4e1b0d2a3b05b2c65d19a17068d2c183e93d956e6272"
+      url "https://github.com/kyleu/npn/releases/download/v0.1.39/npn_0.1.39_darwin_amd64.zip"
+      sha256 "c9da0f899e5931eed1ad42b02fdcd15eaa43290c730873bbbc27d84fb555944f"
 
       def install
         bin.install "npn"
       end
     end
     on_arm do
-      url "https://github.com/kyleu/npn/releases/download/v0.1.38/npn_0.1.38_darwin_arm64.zip"
-      sha256 "02a5c4214e7a4ef6017c22a9986d32fbfac322fe584d7e5d9424c138dd1b6647"
+      url "https://github.com/kyleu/npn/releases/download/v0.1.39/npn_0.1.39_darwin_arm64.zip"
+      sha256 "c6750c2a5b7fc4a66a51de59dc73c41e89f553c9b0a31456d4910e386524bdf2"
 
       def install
         bin.install "npn"
@@ -30,8 +30,8 @@ class Npn < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/npn/releases/download/v0.1.38/npn_0.1.38_linux_amd64.zip"
-        sha256 "8eec8afb2a2eed793ffe03a7ddcf3c2697433d6882f3e77e47340cb955b55e8f"
+        url "https://github.com/kyleu/npn/releases/download/v0.1.39/npn_0.1.39_linux_amd64.zip"
+        sha256 "1d1506345aa77c38f2d10c4264fa5ddfc2047adab026fc29463dfdeb38fc6986"
 
         def install
           bin.install "npn"
@@ -40,8 +40,8 @@ class Npn < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/npn/releases/download/v0.1.38/npn_0.1.38_linux_armv6.zip"
-        sha256 "364927677283ba8967dc6ce370051934f170c01b03a0358425bd0e189428c6ef"
+        url "https://github.com/kyleu/npn/releases/download/v0.1.39/npn_0.1.39_linux_armv6.zip"
+        sha256 "4675456f93dfc8ef95bb6a67af6e61948b6e593323e392cf58e468151695918d"
 
         def install
           bin.install "npn"
@@ -50,8 +50,8 @@ class Npn < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/npn/releases/download/v0.1.38/npn_0.1.38_linux_arm64.zip"
-        sha256 "6688493f018909e8cfb29e32058299c9504a45788c0ed128c829436f3d945a27"
+        url "https://github.com/kyleu/npn/releases/download/v0.1.39/npn_0.1.39_linux_arm64.zip"
+        sha256 "09566c868e96393f685b815ef0b5c5ed5e17e6ebb460a258364391b5221c25ff"
 
         def install
           bin.install "npn"

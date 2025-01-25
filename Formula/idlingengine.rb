@@ -5,21 +5,21 @@
 class Idlingengine < Formula
   desc "Very much a work-in-progress, this will eventually be an incremental/idle game"
   homepage "https://github.com/kyleu/idlingengine"
-  version "0.0.10"
+  version "0.0.11"
   license "CC0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/idlingengine/releases/download/v0.0.10/idlingengine_0.0.10_darwin_amd64.zip"
-      sha256 "eb1b37da37bdf586588d34e3705e3582bcccf40661b3bceafa693dd1a215faf3"
+      url "https://github.com/kyleu/idlingengine/releases/download/v0.0.11/idlingengine_0.0.11_darwin_amd64.zip"
+      sha256 "ceed55980a3112edc59bcebae2cd9861675fd446cb5bea9b51ed92acebceab33"
 
       def install
         bin.install "idlingengine"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyleu/idlingengine/releases/download/v0.0.10/idlingengine_0.0.10_darwin_arm64.zip"
-      sha256 "3b0935a9ba76bb2d9ce79cc4689da821cf2f6f6517fe89136fcc3356bac10e85"
+      url "https://github.com/kyleu/idlingengine/releases/download/v0.0.11/idlingengine_0.0.11_darwin_arm64.zip"
+      sha256 "675a9c2218cf09c913a24008900e6e71cc13a8b685b92b2d60c94db5ad719462"
 
       def install
         bin.install "idlingengine"
@@ -30,8 +30,8 @@ class Idlingengine < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/idlingengine/releases/download/v0.0.10/idlingengine_0.0.10_linux_amd64.zip"
-        sha256 "5956db1f6d5cd790b6aeb84860d6b9e90e04944897eb38ad9f620ce72ab347e4"
+        url "https://github.com/kyleu/idlingengine/releases/download/v0.0.11/idlingengine_0.0.11_linux_amd64.zip"
+        sha256 "ed6be14adf29bae383f7b8e99acc8d168e10340d7188c82314890f2d31cb178f"
 
         def install
           bin.install "idlingengine"
@@ -40,8 +40,8 @@ class Idlingengine < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/idlingengine/releases/download/v0.0.10/idlingengine_0.0.10_linux_armv6.zip"
-        sha256 "c4e5339dca5c19e7e1f8198da6ff99e81db29fcaaa91121e40ccffedf825feb6"
+        url "https://github.com/kyleu/idlingengine/releases/download/v0.0.11/idlingengine_0.0.11_linux_armv6.zip"
+        sha256 "6345260308edb14baa07f3fa2ef1364dc9e55629344326d5fafb2ebb57ce9cc2"
 
         def install
           bin.install "idlingengine"
@@ -50,8 +50,8 @@ class Idlingengine < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/idlingengine/releases/download/v0.0.10/idlingengine_0.0.10_linux_arm64.zip"
-        sha256 "132b39c7494a8d9c68943ffea36a5088fc20a8a98d11aa4c4abc5481ab7be48d"
+        url "https://github.com/kyleu/idlingengine/releases/download/v0.0.11/idlingengine_0.0.11_linux_arm64.zip"
+        sha256 "a0cc51571b17cc0a234d2dc2c1f84e665a4427333cdc62b52fc60212537057b1"
 
         def install
           bin.install "idlingengine"

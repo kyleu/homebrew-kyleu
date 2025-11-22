@@ -5,21 +5,21 @@
 class Todoforge < Formula
   desc "This app is almost entirely generated via Project Forge. It manages collections of todo items, and not much else."
   homepage "https://github.com/kyleu/todoforge"
-  version "0.3.0"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/todoforge/releases/download/v0.3.0/todoforge_0.3.0_darwin_amd64.zip"
-      sha256 "74a3f68130d0d06fe284c1786558dd09236fe03fd2f290d7c0d9a721d158040f"
+      url "https://github.com/kyleu/todoforge/releases/download/v0.3.2/todoforge_0.3.2_darwin_amd64.zip"
+      sha256 "ab30f7feac43b44cf5d07de6dfeba001a9bacb00e0e7a15d69b2abaf8c6e0645"
 
       def install
         bin.install "todoforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyleu/todoforge/releases/download/v0.3.0/todoforge_0.3.0_darwin_arm64.zip"
-      sha256 "bbf126e0be8de97b58c5245a653860e3af99c6fbebcca9de5ea23d66eb171f8c"
+      url "https://github.com/kyleu/todoforge/releases/download/v0.3.2/todoforge_0.3.2_darwin_arm64.zip"
+      sha256 "1efadb5d77f5d03a4183745e349409119b825e4e5c02dc72d2d84e4c7247c446"
 
       def install
         bin.install "todoforge"
@@ -30,8 +30,8 @@ class Todoforge < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/todoforge/releases/download/v0.3.0/todoforge_0.3.0_linux_amd64.zip"
-        sha256 "fd1a79a27dd8cfaa302152c81ee1dd65774194e343b8cdefcb8fdc313bbfa7d9"
+        url "https://github.com/kyleu/todoforge/releases/download/v0.3.2/todoforge_0.3.2_linux_amd64.zip"
+        sha256 "e34225a07cf272b885741ff00ad37ed56f81ead47d0256b93693ff1fb3ce30fc"
 
         def install
           bin.install "todoforge"
@@ -40,8 +40,8 @@ class Todoforge < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/todoforge/releases/download/v0.3.0/todoforge_0.3.0_linux_armv6.zip"
-        sha256 "26ac27885060648c3ba2cf990ab4c8ff6ba2e6b6746bdce9297fcab67dde72cc"
+        url "https://github.com/kyleu/todoforge/releases/download/v0.3.2/todoforge_0.3.2_linux_armv6.zip"
+        sha256 "2993cf65c22c4ef83af0d8ddb16fb9664d52541be927ac6697006139c19327ed"
 
         def install
           bin.install "todoforge"
@@ -50,8 +50,8 @@ class Todoforge < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/todoforge/releases/download/v0.3.0/todoforge_0.3.0_linux_arm64.zip"
-        sha256 "f8c5fbd4936b2a9aa66b311f647bc699ce9330a54c825dba2995bb0bca1a4a04"
+        url "https://github.com/kyleu/todoforge/releases/download/v0.3.2/todoforge_0.3.2_linux_arm64.zip"
+        sha256 "5979b202536dee3537ec078d96361b4ab5b34da175d8cfb079a7ddf36dfad73f"
 
         def install
           bin.install "todoforge"

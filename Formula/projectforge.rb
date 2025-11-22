@@ -5,21 +5,21 @@
 class Projectforge < Formula
   desc "Project Forge creates and manages applications written in the Go programming language. Using code generation, the latest technology, and a strong standard library, Project Forge will help manage your project's code, assets, UI and UX."
   homepage "https://projectforge.dev"
-  version "1.9.1"
+  version "1.9.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/projectforge/releases/download/v1.9.1/projectforge_1.9.1_darwin_amd64.zip"
-      sha256 "adf3678ae23d3684ef85517431b5ec5f0f6205ad3e67747ca12a105459443a3b"
+      url "https://github.com/kyleu/projectforge/releases/download/v1.9.2/projectforge_1.9.2_darwin_amd64.zip"
+      sha256 "6ba7c799985233d15094e4c748a6690e8b95bdf1370eebe0a6ce38ca26bbedb2"
 
       def install
         bin.install "projectforge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyleu/projectforge/releases/download/v1.9.1/projectforge_1.9.1_darwin_arm64.zip"
-      sha256 "35a1ca8795377309fc269450aa62b6c3c2503e0c79ae2c0b6ba832aacacd06c2"
+      url "https://github.com/kyleu/projectforge/releases/download/v1.9.2/projectforge_1.9.2_darwin_arm64.zip"
+      sha256 "83395c5f2483edced337aa223a7a2ae4a1612a1d72eefb28999579385f14eb20"
 
       def install
         bin.install "projectforge"
@@ -30,8 +30,8 @@ class Projectforge < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/projectforge/releases/download/v1.9.1/projectforge_1.9.1_linux_amd64.zip"
-        sha256 "7944bc6de80d67ec8ef66812f079e178b69961338d6a19dd04a65b3b9c30116c"
+        url "https://github.com/kyleu/projectforge/releases/download/v1.9.2/projectforge_1.9.2_linux_amd64.zip"
+        sha256 "ebe925a5a50ec480152c445464166349432b0fef81f184ad155527a9b93610bc"
 
         def install
           bin.install "projectforge"
@@ -40,8 +40,8 @@ class Projectforge < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/projectforge/releases/download/v1.9.1/projectforge_1.9.1_linux_armv6.zip"
-        sha256 "2750268e7937f2852f156d649ceb50bca02786a385dec01ba082c82cc29dd8fc"
+        url "https://github.com/kyleu/projectforge/releases/download/v1.9.2/projectforge_1.9.2_linux_armv6.zip"
+        sha256 "d5f3b4e1856149a774fc3e36a4f6b6941ca0950e158d4a24b0564de498e76eb3"
 
         def install
           bin.install "projectforge"
@@ -50,8 +50,8 @@ class Projectforge < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/projectforge/releases/download/v1.9.1/projectforge_1.9.1_linux_arm64.zip"
-        sha256 "f32e366842bc52db67c749cc0d2b3d182661292d11b7ad919a829a0de160d15d"
+        url "https://github.com/kyleu/projectforge/releases/download/v1.9.2/projectforge_1.9.2_linux_arm64.zip"
+        sha256 "b661e578c8c63ce36ecc9e3f2f752f4653288f1d8e8a05b8da9f111882b5d0cd"
 
         def install
           bin.install "projectforge"

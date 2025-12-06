@@ -6,21 +6,21 @@ require_relative "lib/private_strategy"
 class Spotifriend < Formula
   desc "Your Spotify friend, for everything you'd want to do with your music (a work-in-progress)"
   homepage "https://spotifriend.com"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/spotifriend/releases/download/v0.0.3/spotifriend_0.0.3_darwin_amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "154c128023767839dd8772c17597a6225c1fbf8652841e1dc1367876971a3a26"
+      url "https://github.com/kyleu/spotifriend/releases/download/v0.0.4/spotifriend_0.0.4_darwin_amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "5da148eb8e6e0416d276fc56f0d330227baa04cc72c5cbe635fa13de353da1ce"
 
       def install
         bin.install "spotifriend"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyleu/spotifriend/releases/download/v0.0.3/spotifriend_0.0.3_darwin_arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "5262708daacf272d2987bc942667121177b9caf1f65349441105c7cd6e421b5f"
+      url "https://github.com/kyleu/spotifriend/releases/download/v0.0.4/spotifriend_0.0.4_darwin_arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "4b0cbf21203ef2db5527c027e955ca52c1fc0058ea2c388e769cde74da978221"
 
       def install
         bin.install "spotifriend"
@@ -31,8 +31,8 @@ class Spotifriend < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/spotifriend/releases/download/v0.0.3/spotifriend_0.0.3_linux_amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "de998e3765c54ef76bd00e83e455a06dfd8662c37965861bf788d3e7512dc464"
+        url "https://github.com/kyleu/spotifriend/releases/download/v0.0.4/spotifriend_0.0.4_linux_amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "ab9afbc2b6a46b0e9e6fa144b92a740e71ec3c7151c5ad9cccb9c8b3b4d65dce"
 
         def install
           bin.install "spotifriend"
@@ -41,8 +41,8 @@ class Spotifriend < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/spotifriend/releases/download/v0.0.3/spotifriend_0.0.3_linux_armv6.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "506a7c180c8dcbf4e65e5ae968b919912af5fe7bd55ac55f43b50e3bc79873fd"
+        url "https://github.com/kyleu/spotifriend/releases/download/v0.0.4/spotifriend_0.0.4_linux_armv6.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "0a3a618a078b956c9726c3645942851a84264fad98811a2ef4c712584b592026"
 
         def install
           bin.install "spotifriend"
@@ -51,8 +51,8 @@ class Spotifriend < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/spotifriend/releases/download/v0.0.3/spotifriend_0.0.3_linux_arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-        sha256 "ae402e3e8f0dfe111bf6154dbcf403106d8a59422824dbbe9b001a2d1625d8e8"
+        url "https://github.com/kyleu/spotifriend/releases/download/v0.0.4/spotifriend_0.0.4_linux_arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+        sha256 "0b5b4e52b42bd112bee39ca317fc58dbb2625e822ddaa8df99795e482b0dee0c"
 
         def install
           bin.install "spotifriend"

@@ -5,21 +5,21 @@
 class Solitaire < Formula
   desc "A solitaire game... details soon"
   homepage "https://github.com/kyleu/solitaire"
-  version "0.3.8"
+  version "0.3.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kyleu/solitaire/releases/download/v0.3.8/solitaire_0.3.8_darwin_amd64.zip"
-      sha256 "7de82be60e67d277579b56aa2a1ea252eb3d72f65a8ae3c63899cb19d0992465"
+      url "https://github.com/kyleu/solitaire/releases/download/v0.3.9/solitaire_0.3.9_darwin_amd64.zip"
+      sha256 "9d93bb8b60041b444098178b0235374e2836feb9d9a9c98a37017542524168fc"
 
       def install
         bin.install "solitaire"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kyleu/solitaire/releases/download/v0.3.8/solitaire_0.3.8_darwin_arm64.zip"
-      sha256 "1fa6474266d4d5db5b47c2a4b2ead624998412f2d166b7449eea21b9224f40ac"
+      url "https://github.com/kyleu/solitaire/releases/download/v0.3.9/solitaire_0.3.9_darwin_arm64.zip"
+      sha256 "b57c7d2b6a475d107a425f6aa3108082748e6da6b0c6c0555223201fa5fdded9"
 
       def install
         bin.install "solitaire"
@@ -28,34 +28,25 @@ class Solitaire < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/solitaire/releases/download/v0.3.8/solitaire_0.3.8_linux_amd64.zip"
-        sha256 "ce6d224cff874b0c6f3952e92c56b275dd93e1ee09f58fcae63728eb9409245a"
-
-        def install
-          bin.install "solitaire"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kyleu/solitaire/releases/download/v0.3.9/solitaire_0.3.9_linux_amd64.zip"
+      sha256 "a3adfb7431ecd0e48801509480b03efaf4624333a9c6dc96cd6518b42baaf8cd"
+      def install
+        bin.install "solitaire"
       end
     end
-    if Hardware::CPU.arm?
-      if !Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/solitaire/releases/download/v0.3.8/solitaire_0.3.8_linux_armv6.zip"
-        sha256 "cdad81ac85318f3640c6a0ff0bd7b3af1cfe8bff4aa2fa0891dbaf656ffa4291"
-
-        def install
-          bin.install "solitaire"
-        end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/kyleu/solitaire/releases/download/v0.3.9/solitaire_0.3.9_linux_armv6.zip"
+      sha256 "8d28fd09995cb852ebfeebaa23d15e7160d21f7a39ed19ce086f6de5701dd579"
+      def install
+        bin.install "solitaire"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/kyleu/solitaire/releases/download/v0.3.8/solitaire_0.3.8_linux_arm64.zip"
-        sha256 "f0ec4d5492212d9a7d8a3764a980c5abd8ec4e15d7ac1bc1d9461d2fce00bcf6"
-
-        def install
-          bin.install "solitaire"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kyleu/solitaire/releases/download/v0.3.9/solitaire_0.3.9_linux_arm64.zip"
+      sha256 "eb4ab99daf00998665692d375ccf81b321ced088184ce1ccaa209d790379fe50"
+      def install
+        bin.install "solitaire"
       end
     end
   end

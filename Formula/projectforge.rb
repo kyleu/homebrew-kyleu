@@ -11,7 +11,7 @@ class Projectforge < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kyleu/projectforge/releases/download/v2.1.1/projectforge_2.1.1_darwin_amd64.zip"
-      sha256 "e1ec5246e751f915336bf740fad5e38c6d2a7fb183f7ccdf77d742cce79e1536"
+      sha256 "6cff28d4ee15e39d69f6ad5c4d24696ebf173ab0a4c673db1bd9b928904200d7"
 
       def install
         bin.install "projectforge"
@@ -19,7 +19,7 @@ class Projectforge < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kyleu/projectforge/releases/download/v2.1.1/projectforge_2.1.1_darwin_arm64.zip"
-      sha256 "6e9c7b19951b622f7daf35fb4e1eb7dd1a76d9c6f84330c7235a8aefdd3b5134"
+      sha256 "d15222667545a31062c6fe61ae9128428b63182a50286965f9df9493b740cb56"
 
       def install
         bin.install "projectforge"
@@ -30,21 +30,21 @@ class Projectforge < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyleu/projectforge/releases/download/v2.1.1/projectforge_2.1.1_linux_amd64.zip"
-      sha256 "43c4fe902fad80ddd498f319cb50656918b20addc2d76ce5787314ab231e21b7"
+      sha256 "733dfbba65ea09446ad3925244a1c869e24446516f153582c2ee9e261ce780a0"
       def install
         bin.install "projectforge"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/kyleu/projectforge/releases/download/v2.1.1/projectforge_2.1.1_linux_armv6.zip"
-      sha256 "478a6162022d6824d2cfec72931f1cc2263ae8f6eaa0e32cc8774e099ec535d4"
+      sha256 "cb816ebd4778ee0f679c3f64379520f96d7f14909daadb302362e6f8bf1f6ff5"
       def install
         bin.install "projectforge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kyleu/projectforge/releases/download/v2.1.1/projectforge_2.1.1_linux_arm64.zip"
-      sha256 "b37e277a1e94c3a2bdd431d9f5ee6ad0e1d684761b6eec5f14419aedf4cc06ad"
+      sha256 "eafb7f44c62f19a5b6a9e79a5dbee4f9fdb68388d55b85c1b14407ffb57d48c3"
       def install
         bin.install "projectforge"
       end
